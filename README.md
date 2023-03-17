@@ -4,7 +4,7 @@
 
 Містить 3 маркери
 
-Посилання на AR-інформаційну основу (підкладку) буклету - https://github.com/SKIFY/ColumbianTabulator
+Посилання на AR-інформаційну основу (підкладку) буклету - https://github.com/SKIFY/ColumbianTabulator/blob/master/підкладка.pdf
 Створено з використанням маркерного WebAR-конструктора - https://ar.gamehub.od.ua
 
 **Команда проекту**
