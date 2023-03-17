@@ -154,7 +154,7 @@
                 const patternNames = ["pattern-name.patt" ,"pattern-creator.patt" ,"pattern-tabulator.patt"];
                 // Масив баркодів, заповнюється одночасно з масивом патернів
                 // якщо замість баркоду був доданий .patt, на його місце масив додається -1
-                const patternBarcode = [-1 ,0 , 1];
+                const patternBarcode = [1,2,3];
                 // Масив типів контенту кожного маркера, заповнюється значеннями: зображення, модель, відео
                 const modes = ["image" ,"image" ,"image"];
                 // Масив файлів моделей, якщо немає моделі буде додано порожній рядок
@@ -180,7 +180,7 @@
 
                     // Якщо поточний маркер – це баркод, створюємо AR контролер під баркод
                     // якщо поточний маркер це патерн, аналогічно створюємо AR контролер під патерн
-                    if (patternBarcode[i] === -1) {
+                    if (patternBarcode[i] < 3) {
                         let markerControls1 = new THREEx.ArMarkerControls(arToolkitContext, markerRoots[i], {
                             type: 'pattern', patternUrl: patternNames[i], size: 1 + (i + 1) / patternIdOffset
                         })
